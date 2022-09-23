@@ -19,3 +19,16 @@ PS C:\Users\XXX> py omikuji_3.py
 #### より洗練されたプログラミングの形
 - omikuji_7.py : 関数を使って、入力文字エラーチェック機能とおみくじ機能を分離して記載。リーダブル・コードの考え方へ近づきつつあります。
 - omikuji.py + omikuji_class.py : クラスを使っておみくじスクリプトをオブジェクト化して関数を呼び出しやすくしつつ、コードの再利用性を上げています。クラスを呼び出しているomikuji.pyのシンプルな書き方にも着目ください。
+
+```
+#おみくじクラスの呼び出し
+import omikuji_class
+
+def main():
+  #インスタンスの生成
+  omkj = omikuji_class.Omikuji()
+  omkj.start()
+  
+if __name__ == "__main__":
+  main()
+```
